@@ -2,7 +2,7 @@
 import requests
 import socket
 
-public_ip4 = requests.get('https://www.wikipedia.org').headers['X-Client-IP']
+public_ipv4 = requests.get('https://www.wikipedia.org').headers['X-Client-IP']
 hostname = socket.gethostname()
 internal_ipv4 = socket.gethostbyname(hostname)
 
